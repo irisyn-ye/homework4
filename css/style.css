@@ -1,0 +1,100 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* background: #fff;
+  border-bottom: 3px solid #50C7C7; */
+}
+
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  animation: fadeIn 3s;
+}
+
+/* #logo {
+  width: 100%;
+  height: auto;
+  animation: fadeIn 3s;
+} */
+
+/* #image1, #image2, #image3, #image4, #image5 {
+  width: 100%;
+} */
+
+.nav_links {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* position: absolute; */
+  /* align-self: flex-end;
+  margin-left: auto; */
+}
+
+@media all and (min-width: 700px) {
+  header {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  header img {
+    width: 400px;
+    /* height: auto; */
+    /* justify-content: left; */
+  }
+  
+  .nav_links {
+    /* display: flex; */
+    /* justify-content: right; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    width: 300px;
+    /* flex-wrap: wrap; */
+  }
+
+  .gallery img {
+    width: 300px;
+  }
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  header img {
+    animation: none;
+  }
+}
